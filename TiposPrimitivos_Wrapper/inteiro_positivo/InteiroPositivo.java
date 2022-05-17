@@ -8,21 +8,21 @@ public class InteiroPositivo {
     // Daremos mais “poder” para nossa classe incluindo o método ehPrimo que retorna um boolean
     // que returna true se o número “envelopado” for primo, senão retorna false.
 
-    int valor;
+    private int valor;
 
-    InteiroPositivo(int valor) throws Exception {
+    InteiroPositivo(int valor) throws IllegalArgumentException {
         if (valor >= 0) {
             this.valor = valor;
         } else {
-            throw new Exception("Valor nao eh um valor inteiro positivo");
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
     }
 
-    InteiroPositivo(String valor) throws Exception {
+    InteiroPositivo(String valor) throws IllegalArgumentException {
         if (Integer.valueOf(valor) >= 0) {
             this.valor = Integer.valueOf(valor);
         } else {
-            throw new Exception("Valor nao eh um valor inteiro positivo");
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
     }
 
@@ -44,11 +44,11 @@ public class InteiroPositivo {
         return this.valor;
     }
 
-    public void setValor(int valor) throws Exception {
+    public void setValor(int valor) throws IllegalArgumentException {
         if (valor >= 0) {
             this.valor = valor;
         } else {
-            throw new Exception("Valor nao eh um valor inteiro positivo");
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
     }
 
