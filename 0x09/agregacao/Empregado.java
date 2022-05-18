@@ -16,7 +16,7 @@ public class Empregado {
         System.out.printf("Nome: %s\n", this.nome);
         System.out.printf("Bairro: %s\n", this.endereco.getBairro());
         System.out.printf("Cidade: %s\n", this.endereco.getCidade());
-        System.out.printf("Pais: %s\n", this.endereco.getPais());
+        System.out.printf("Pais: %s", this.endereco.getPais());
     }
 
     // getters and setters
