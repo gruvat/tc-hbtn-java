@@ -1,11 +1,11 @@
 public class Empregado {
-    private String name;
+    private String nome;
     private int codigo;
     private Endereco endereco;
 
     // constructor
-    public Empregado(String name, int codigo, Endereco endereco) {
-        this.name = name;
+    public Empregado(String nome, int codigo, Endereco endereco) {
+        this.nome = nome;
         this.codigo = codigo;
         this.endereco = endereco;
     }
@@ -13,20 +13,20 @@ public class Empregado {
     // public methods
     public void apresentar() {
         System.out.printf("Codigo: %d\n", this.codigo);
-        System.out.printf("Nome: %s\n", this.name);
+        System.out.printf("Nome: %s\n", this.nome);
         System.out.printf("Bairro: %s\n", this.endereco.getBairro());
         System.out.printf("Cidade: %s\n", this.endereco.getCidade());
         System.out.printf("Pais: %s\n", this.endereco.getPais());
     }
-    
+
     // getters and setters
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getCodigo() {
