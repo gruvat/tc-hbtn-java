@@ -1,5 +1,3 @@
-package numeros;
-
 public class Numeros0a99 {
     public static void main(String[] args) {
         int minNum = 0;
@@ -7,7 +5,7 @@ public class Numeros0a99 {
 
         StringBuilder finalPrint = new StringBuilder();
 
-        for (int i = minNum; i < maxNum - 1; i++) {
+        for (int i = minNum; i < maxNum; i++) {
             finalPrint.append(i);
             finalPrint.append(", ");
         }
