@@ -1,4 +1,6 @@
-import comida.*;
+package plano_mordor;
+
+import plano_mordor.comida.*;
 
 public class Program {
     public static void main(String[] args) {

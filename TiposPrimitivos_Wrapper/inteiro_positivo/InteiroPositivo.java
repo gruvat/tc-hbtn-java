@@ -1,3 +1,4 @@
+package inteiro_positivo;
 public class InteiroPositivo {
 
     // Crie o atributo valor do tipo int, que é o valor “envelopado” na classe.

@@ -1,3 +1,5 @@
+package personagem;
+
 public final class PersonagemGame {
     
     public int saudeAtual;

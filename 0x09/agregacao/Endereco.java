@@ -1,3 +1,4 @@
+package agregacao;
 public class Endereco {
     private String logradouro;
     private String numero;

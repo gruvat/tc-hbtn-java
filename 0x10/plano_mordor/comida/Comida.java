@@ -1,4 +1,4 @@
-package comida;
+package plano_mordor.comida;
 
 public abstract class Comida {
     protected int pontosDeFelicidade;

@@ -1,3 +1,5 @@
+package metodos;
+
 public final class PersonagemGame {
     private int saudeAtual;
     private String nome;

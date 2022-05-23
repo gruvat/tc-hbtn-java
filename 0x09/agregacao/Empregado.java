@@ -1,3 +1,4 @@
+package agregacao;
 public class Empregado {
     private String nome;
     private int codigo;

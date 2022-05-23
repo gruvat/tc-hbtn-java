@@ -1,3 +1,3 @@
-package humor;
+package plano_mordor.humor;
 
 public abstract class Humor { }

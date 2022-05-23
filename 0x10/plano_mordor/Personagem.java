@@ -1,5 +1,7 @@
-import humor.*;
-import comida.*;
+package plano_mordor;
+
+import plano_mordor.humor.*;
+import plano_mordor.comida.*;
 
 public class Personagem {
     private Integer pontosDeFelicidade = 0;
