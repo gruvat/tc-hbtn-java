@@ -47,7 +47,7 @@ public class Pedido {
         System.out.printf("TOTAL PRODUTOS: %s\n", String.format("%.2f", this.calcularTotalSemDesconto()));
         System.out.println("----------------------------");
         System.out.printf("TOTAL PRODUTOS: %s\n", String.format("%.2f", this.calcularTotal()));
-        System.out.println("----------------------------");
+        System.out.println("----------------------------\n");
 
     }
 
