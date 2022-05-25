@@ -1,5 +1,3 @@
-package quadrado;
-
 import java.util.Locale;
 
 public class Quadrado extends Retangulo {
@@ -14,9 +12,9 @@ public class Quadrado extends Retangulo {
         return lado;
     }
 
-    public void setLado(double lado) throws java.lang.IllegalArgumentException {
+    public void setLado(double lado) throws IllegalArgumentException {
         if (lado < 0) {
-            throw new java.lang.IllegalArgumentException("Lado deve ser maior ou igual a 0");
+            throw new IllegalArgumentException("Lado deve ser maior ou igual a 0");
         } else {
             this.lado = lado;
             super.setAltura(lado);

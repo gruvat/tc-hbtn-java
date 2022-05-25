@@ -1,5 +1,3 @@
-package quadrado;
-
 import java.util.Locale;
 
 public class Retangulo extends FormaGeometrica {
