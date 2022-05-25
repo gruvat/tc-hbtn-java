@@ -1,3 +1,5 @@
+package abstrata;
+
 import java.util.Locale;
 
 public class Retangulo extends FormaGeometrica {
