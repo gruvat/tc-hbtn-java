@@ -1,19 +1,16 @@
-package pedido_livraria;
-
-import java.util.Locale;
-
 public class Program {
     public static void main(String[] args) {
-        pedido_livraria.produtos.Livro livro1 = new pedido_livraria.produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
-        pedido_livraria.produtos.Livro livro2 = new pedido_livraria.produtos.Livro("Um de nós está mentindo", 2018, "Brasil", 34.93, 384,
+        produtos.Livro livro1 = new produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
+        produtos.Livro livro2 = new produtos.Livro("Um de nos esta mentindo", 2018, "Brasil", 34.93, 384,
                 "Karen Mcmanus", 1);
-        pedido_livraria.produtos.Livro livro3 = new pedido_livraria.produtos.Livro("Mindset Milionário", 2021, "Brasil", 31.70, 272,
+        produtos.Livro livro3 = new produtos.Livro("Mindset Milionario", 2021, "Brasil", 31.70, 272,
                 "José Roberto Marques", 1);
 
-        pedido_livraria.produtos.Dvd dvd1 = new pedido_livraria.produtos.Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos", 16.90,
+        produtos.Dvd dvd1 = new produtos.Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos",
+                16.90,
                 "Anna Foerster",
                 "Ação", 91);
-        pedido_livraria.produtos.Dvd dvd2 = new pedido_livraria.produtos.Dvd("Annabelle 2 - A Criação do Mal", 2017, "Brasil", 39.90,
+        produtos.Dvd dvd2 = new produtos.Dvd("Annabelle 2 - A Criacao do Mal", 2017, "Brasil", 39.90,
                 "Jame Wan e Peter Safran",
                 "Terror",
                 109);
@@ -26,7 +23,7 @@ public class Program {
 
         Pedido pedido1 = new Pedido(0, itensPedido1);
 
-        System.out.printf("Total Pedido: %s\n", String.format(new Locale("pt", "BR"), "%.2f", pedido1.calcularTotal()));
+        pedido1.apresentarResumoPedido();
 
         // Pedido 2
         ItemPedido[] itensPedido2 = new ItemPedido[] {
@@ -36,7 +33,7 @@ public class Program {
 
         Pedido pedido2 = new Pedido(10, itensPedido2);
 
-        System.out.printf("Total Pedido: %s\n", String.format(new Locale("pt", "BR"), "%.2f", pedido2.calcularTotal()));
+        pedido2.apresentarResumoPedido();
 
         // Pedido 3
         ItemPedido[] itensPedido3 = new ItemPedido[] {
@@ -47,7 +44,7 @@ public class Program {
 
         Pedido pedido3 = new Pedido(5, itensPedido3);
 
-        System.out.printf("Total Pedido: %s\n", String.format(new Locale("pt", "BR"), "%.2f", pedido3.calcularTotal()));
+        pedido3.apresentarResumoPedido();
 
         // Pedido 4
         ItemPedido[] itensPedido4 = new ItemPedido[] {
@@ -60,6 +57,6 @@ public class Program {
 
         Pedido pedido4 = new Pedido(5, itensPedido4);
 
-        System.out.printf("Total Pedido: %s\n", String.format(new Locale("pt", "BR"), "%.2f", pedido4.calcularTotal()));
+        pedido4.apresentarResumoPedido();
     }
 }

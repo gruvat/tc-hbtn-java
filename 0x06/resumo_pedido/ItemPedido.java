@@ -1,6 +1,4 @@
-package pedido_livraria;
-
-import pedido_livraria.produtos.Produto;
+import produtos.Produto;
 
 public class ItemPedido {
 
@@ -12,6 +10,9 @@ public class ItemPedido {
         this.quantidade = quantidade;
     }
 
+    public double getValorLiquido() {
+        return this.quantidade * this.produto.obterPrecoLiquido();
+    }
     public int getQuantidade() {
         return quantidade;
     }
