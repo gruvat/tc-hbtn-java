@@ -1,5 +1,3 @@
-//package forma;
-
 public class Program {
     public static void main(String[] args) {
         FormaGeometrica formaGeometrica = new FormaGeometrica();
@@ -10,4 +8,4 @@ public class Program {
             System.out.println(e);
         }
     }
-}
+}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
