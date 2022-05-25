@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
         produtos.Livro livro1 = new produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
@@ -56,6 +58,6 @@ public class Program {
 
         Pedido pedido4 = new Pedido(5, itensPedido4);
 
-        System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
+        System.out.printf("Total Pedido: %.2f\n", String.format(new Locale("pt", "BR"), "%.2f", pedido4.calcularTotal()));
     }
 }
