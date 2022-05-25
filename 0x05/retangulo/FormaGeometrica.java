@@ -1,3 +1,5 @@
+package retangulo;
+
 public class FormaGeometrica {
 
     public double area() throws java.lang.UnsupportedOperationException {
