@@ -1,4 +1,4 @@
-//package somar;
+package somar;
 
 public class Program {
     public static void main(String[] args) {
