@@ -1,3 +1,5 @@
+package workflow;
+
 public enum FormatoVideo {
     MPEG,
     AVI,

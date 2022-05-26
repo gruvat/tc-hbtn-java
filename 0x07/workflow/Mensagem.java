@@ -1,3 +1,5 @@
+package workflow;
+
 public class Mensagem {
 
     private String texto;

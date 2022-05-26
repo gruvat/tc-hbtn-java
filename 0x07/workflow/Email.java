@@ -1,3 +1,4 @@
+package workflow;
 public class Email implements CanalNotificacao{
 
     public void notificar(Mensagem mensagem) {
