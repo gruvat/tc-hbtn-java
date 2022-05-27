@@ -1,4 +1,4 @@
-package workflow.atividades;
+package atividades;
 
 public class CodificarVideo implements Atividade{
 
