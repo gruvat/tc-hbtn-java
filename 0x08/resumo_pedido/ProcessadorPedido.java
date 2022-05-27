@@ -1,4 +1,6 @@
-import provedores.*;
+package resumo_pedido;
+
+import resumo_pedido.provedores.*;
 
 public class ProcessadorPedido {
     private ProvedorFrete provedorFrete;

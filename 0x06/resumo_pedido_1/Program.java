@@ -1,18 +1,21 @@
-package resumo_pedido;
+package resumo_pedido_1;
+
+import resumo_pedido_1.produtos.Dvd;
+import resumo_pedido_1.produtos.Livro;
 
 public class Program {
     public static void main(String[] args) {
-        resumo_pedido.produtos.Livro livro1 = new resumo_pedido.produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
-        resumo_pedido.produtos.Livro livro2 = new resumo_pedido.produtos.Livro("Um de nos esta mentindo", 2018, "Brasil", 34.93, 384,
+        Livro livro1 = new Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
+        Livro livro2 = new Livro("Um de nos esta mentindo", 2018, "Brasil", 34.93, 384,
                 "Karen Mcmanus", 1);
-        resumo_pedido.produtos.Livro livro3 = new resumo_pedido.produtos.Livro("Mindset Milionario", 2021, "Brasil", 31.70, 272,
+        Livro livro3 = new Livro("Mindset Milionario", 2021, "Brasil", 31.70, 272,
                 "José Roberto Marques", 1);
 
-        resumo_pedido.produtos.Dvd dvd1 = new resumo_pedido.produtos.Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos",
+        Dvd dvd1 = new Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos",
                 16.90,
                 "Anna Foerster",
                 "Ação", 91);
-        resumo_pedido.produtos.Dvd dvd2 = new resumo_pedido.produtos.Dvd("Annabelle 2 - A Criacao do Mal", 2017, "Brasil", 39.90,
+        Dvd dvd2 = new Dvd("Annabelle 2 - A Criacao do Mal", 2017, "Brasil", 39.90,
                 "Jame Wan e Peter Safran",
                 "Terror",
                 109);
@@ -23,7 +26,7 @@ public class Program {
                 new ItemPedido(dvd2, 1)
         };
 
-        Pedido pedido1 = new Pedido(0, itensPedido1);
+        resumo_pedido_1.Pedido pedido1 = new resumo_pedido_1.Pedido(0, itensPedido1);
 
         pedido1.apresentarResumoPedido();
 
@@ -33,7 +36,7 @@ public class Program {
                 new ItemPedido(dvd2, 1)
         };
 
-        Pedido pedido2 = new Pedido(10, itensPedido2);
+        resumo_pedido_1.Pedido pedido2 = new resumo_pedido_1.Pedido(10, itensPedido2);
 
         pedido2.apresentarResumoPedido();
 
@@ -44,7 +47,7 @@ public class Program {
                 new ItemPedido(dvd1, 1)
         };
 
-        Pedido pedido3 = new Pedido(5, itensPedido3);
+        resumo_pedido_1.Pedido pedido3 = new resumo_pedido_1.Pedido(5, itensPedido3);
 
         pedido3.apresentarResumoPedido();
 
@@ -57,7 +60,7 @@ public class Program {
                 new ItemPedido(dvd2, 2)
         };
 
-        Pedido pedido4 = new Pedido(5, itensPedido4);
+        resumo_pedido_1.Pedido pedido4 = new Pedido(5, itensPedido4);
 
         pedido4.apresentarResumoPedido();
     }

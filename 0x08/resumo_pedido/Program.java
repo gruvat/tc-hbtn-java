@@ -1,4 +1,6 @@
-import provedores.*;
+package resumo_pedido;
+
+import resumo_pedido.provedores.*;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package provedores;
+package resumo_pedido.provedores;
 
 public class Sedex extends Empresa implements ProvedorFrete {
 

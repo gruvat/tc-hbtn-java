@@ -1,6 +1,6 @@
-package resumo_pedido;
+package resumo_pedido_1;
 
-import resumo_pedido.produtos.Produto;
+import resumo_pedido_1.produtos.Produto;
 
 public class ItemPedido {
 

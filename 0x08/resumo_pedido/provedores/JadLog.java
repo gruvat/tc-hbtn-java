@@ -1,4 +1,4 @@
-package provedores;
+package resumo_pedido.provedores;
 
 public class JadLog extends Empresa implements ProvedorFrete {
 
