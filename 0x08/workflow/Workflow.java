@@ -1,0 +1,19 @@
+package workflow;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import workflow.atividades.Atividade;
+
+public class Workflow {
+
+    private List<Atividade> atividades = new ArrayList<>();
+
+    public void registrarAtividade(Atividade atividade) {
+        this.atividades.add(atividade);
+    }
+
+    public List<Atividade> getAtividades() {
+        return atividades;
+    }
+}

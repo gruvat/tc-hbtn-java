@@ -1,4 +1,4 @@
-package workflow;
+package workflow_1;
 
 public class Video {
     private String arquivo;
