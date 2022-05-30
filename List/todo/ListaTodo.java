@@ -60,7 +60,7 @@ public class ListaTodo {
             if (t.isEstahFeita()) {
                 mark = "X";
             }
-            System.out.printf("[%s] Id: %d - Descricao: %s\n", mark, t.getIdentificador(), t.getDescricao());
+            System.out.printf("[%s]  Id: %d - Descricao: %s\n", mark, t.getIdentificador(), t.getDescricao());
         }
     }
 
