@@ -31,7 +31,7 @@ public class Pedido {
         while(i.hasNext()) {
             PedidoCookie p = i.next();
             if (p.getSabor().equals(sabor)) {
-                removidos.addAndGet(1);
+                removidos.addAndGet(p.getQuantidadeCaixas());
                 i.remove();
             }
         }
