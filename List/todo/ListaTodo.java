@@ -13,7 +13,7 @@ public class ListaTodo {
     public void adicionarTarefa(Tarefa tarefa) throws Exception {
         for (Tarefa t : this.tarefas) {
             if (t.getIdentificador() == tarefa.getIdentificador()) {
-                throw new Exception(
+                throw new IllegalArgumentException(
                         String.format("Tarefa com identificador %d ja existente na lista", t.getIdentificador())
                 );
             }
