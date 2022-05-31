@@ -27,16 +27,14 @@ public final class PersonagemGame {
         // life logic
         if (saudeAtual < 0) {
             this.saudeAtual = 0;
-        } else if (saudeAtual > 100) {
-            this.saudeAtual = 100;
         } else {
-            this.saudeAtual = saudeAtual;
+            this.saudeAtual = Math.min(saudeAtual, 100);
         }
 
         // setStatus
         if (this.saudeAtual > 0) {
             this.status = "vivo";
-        } else if (this.saudeAtual == 0) {
+        } else {
             this.status = "morto";
         }
     }

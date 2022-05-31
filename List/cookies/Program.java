@@ -1,5 +1,6 @@
 package cookies;
 
+@SuppressWarnings("RedundantStringFormatCall")
 public class Program {
     public static void main(String[] args) {
         Pedido pedido = new Pedido();

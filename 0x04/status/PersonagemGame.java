@@ -8,21 +8,13 @@ public final class PersonagemGame {
     public void tomarDano(int quantidadeDeDano) {
         int novaSaude = this.saudeAtual - quantidadeDeDano;
 
-        if (novaSaude < 0) {
-            this.setSaudeAtual(0);
-        } else {
-            this.setSaudeAtual(novaSaude);
-        }
+        this.setSaudeAtual(Math.max(novaSaude, 0));
     }
 
     public void receberCura(int quantidadeDeCura) {
         int novaSaude = this.saudeAtual + quantidadeDeCura;
 
-        if (novaSaude > 100) {
-            this.setSaudeAtual(100);
-        } else {
-            this.setSaudeAtual(novaSaude);
-        }
+        this.setSaudeAtual(Math.min(novaSaude, 100));
     }
 
     public int getSaudeAtual() {
