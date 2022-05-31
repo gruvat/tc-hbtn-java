@@ -1,4 +1,4 @@
-package Celular;
+package celular;
 
 public enum TipoNumero {
     CELULAR,
