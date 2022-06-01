@@ -4,20 +4,19 @@ import java.util.*;
 
 public class NumerosDuplicados {
 
-    public static TreeSet<Integer> buscar(int[] intengers) {
-        List<Integer> intengersList = Arrays.stream(intengers).boxed().toList();
+    public static TreeSet<Integer> buscar(int[] integers) {
 
-        HashSet<Integer> intengersHashSet = new HashSet<Integer>();
-        TreeSet<Integer> numbersSet = new TreeSet<Integer>();
+        HashSet<Integer> integerHashSet = new HashSet<Integer>();
+        TreeSet<Integer> integersDuplicated = new TreeSet<Integer>();
 
-        for (Integer i : intengersList) {
-            if ( intengersHashSet.contains(i) ) {
-                numbersSet.add(i);
+        for (Integer i : integers) {
+            if ( integerHashSet.contains(i) ) {
+                integersDuplicated.add(i);
             } else {
-                intengersHashSet.add(i);
+                integerHashSet.add(i);
             }
         }
 
-        return numbersSet;
+        return integersDuplicated;
     }
 }
