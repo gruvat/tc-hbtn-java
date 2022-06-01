@@ -39,22 +39,10 @@ public class ListaTelefonica {
 
     public HashSet<Telefone> buscar(String nome) {
         if (this.telephoneNumbers.containsKey(nome)) {
-//            Comparator<Telefone> telefoneComparator = new TelefoneComparator();
-//            Collections.sort(this.telephoneNumbers.get(nome), telefoneComparator);
             return this.telephoneNumbers.get(nome);
         } else {
             return null;
         }
     }
-
-//    private class TelefoneComparator implements Comparator<Telefone> {
-//        @Override
-//        public int compare(Telefone t1, Telefone t2) {
-//            return Integer.compare(
-//                    Integer.parseInt(t1.getCodigoArea()),
-//                    Integer.parseInt(t2.getCodigoArea())
-//            );
-//        }
-//    }
 
 }
