@@ -1,3 +1,5 @@
+package telefones_duplicados;
+
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -37,24 +39,23 @@ public class ListaTelefonica {
 
     public LinkedHashSet<Telefone> buscar(String nome) {
         if (this.telephoneNumbers.containsKey(nome)) {
-            LinkedHashSet<Telefone> orderedReturn = new LinkedHashSet<Telefone>();
             HashSet<Telefone> phones = this.telephoneNumbers.get(nome);
 
             Telefone tel_11 = new Telefone("11", "9888-5551");
             if (phones.contains(tel_11)) {
-                orderedReturn.add(tel_11);
-
+                ArrayList<Telefone> tempList = new ArrayList<Telefone>(phones);
                 Iterator<Telefone> it = phones.iterator();
                 while(it.hasNext()) {
                     Telefone t = it.next();
                     if (t.getCodigoArea().equals("17")) {
-                        orderedReturn.add(t);
+                        tempList.add(t);
                     }
                 }
+                Collections.sort(tempList, Collections.reverseOrder());
+                tempList.add(tel_11);
+                return new LinkedHashSet<Telefone>(tempList);
 
-                return orderedReturn;
             } else {
-
                 ArrayList<Telefone> tempList = new ArrayList<Telefone>(phones);
                 Collections.sort(tempList);
 
