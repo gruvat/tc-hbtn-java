@@ -1,5 +1,3 @@
-package telefones_duplicados;
-
 import java.util.*;
 
 public class Program {

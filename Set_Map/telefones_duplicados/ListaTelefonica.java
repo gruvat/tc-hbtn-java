@@ -1,5 +1,3 @@
-package telefones_duplicados;
-
 import java.util.*;
 import java.util.Map.Entry;
 
