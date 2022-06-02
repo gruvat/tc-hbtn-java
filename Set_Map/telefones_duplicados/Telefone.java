@@ -2,7 +2,7 @@ package telefones_duplicados;
 
 import java.util.Objects;
 
-public class Telefone {
+public class Telefone implements Comparable<Telefone>{
 
     private String codigoArea;
     private String numero;
@@ -36,5 +36,26 @@ public class Telefone {
 
     public String getNumero() {
         return numero;
+    }
+
+    @Override
+    public int compareTo(Telefone o) {
+        int objectCode = Integer.parseInt(this.codigoArea);
+        int comparingObjectCode = Integer.parseInt(o.codigoArea);
+
+        int objectNumber = Integer.parseInt(this.codigoArea);
+        int comparingObjectNumber = Integer.parseInt(o.codigoArea);
+
+        if (objectCode > comparingObjectCode) {
+            return 1;
+        } else if (objectCode == comparingObjectCode) {
+            if (objectNumber > comparingObjectNumber) {
+                return 1;
+            } else {
+                return -1;
+            }
+        } else {
+            return -1;
+        }
     }
 }

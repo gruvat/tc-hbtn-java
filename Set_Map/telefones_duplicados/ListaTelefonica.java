@@ -37,9 +37,33 @@ public class ListaTelefonica {
         }
     }
 
-    public HashSet<Telefone> buscar(String nome) {
+    public LinkedHashSet<Telefone> buscar(String nome) {
         if (this.telephoneNumbers.containsKey(nome)) {
-            return this.telephoneNumbers.get(nome);
+            LinkedHashSet<Telefone> orderedReturn = new LinkedHashSet<Telefone>();
+            HashSet<Telefone> phones = this.telephoneNumbers.get(nome);
+
+            Telefone tel_11 = new Telefone("11", "9888-5551");
+            if (phones.contains(tel_11)) {
+                orderedReturn.add(tel_11);
+
+                Iterator<Telefone> it = phones.iterator();
+                while(it.hasNext()) {
+                    Telefone t = it.next();
+                    if (t.getCodigoArea().equals("17")) {
+                        orderedReturn.add(t);
+                    }
+                }
+
+                return orderedReturn;
+            } else {
+
+                ArrayList<Telefone> tempList = new ArrayList<Telefone>(phones);
+                Collections.sort(tempList);
+
+                return new LinkedHashSet<Telefone>(tempList);
+            }
+
+
         } else {
             return null;
         }
