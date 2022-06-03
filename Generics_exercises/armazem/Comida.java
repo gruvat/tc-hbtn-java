@@ -2,7 +2,7 @@ package armazem;
 
 public class Comida {
     private String nome;
-    private int calorias;
+    private double calorias;
     private double preco;
 
     public Comida(String nome, int calorias, double preco) {
@@ -13,14 +13,14 @@ public class Comida {
 
     @Override
     public String toString() {
-        return String.format("[%s] %d R$ %f", this.nome, this.calorias, this.preco);
+        return String.format("[%s] %f R$ %f", this.nome, this.calorias, this.preco);
     }
 
     public String getNome() {
         return nome;
     }
 
-    public int getCalorias() {
+    public double getCalorias() {
         return calorias;
     }
 
