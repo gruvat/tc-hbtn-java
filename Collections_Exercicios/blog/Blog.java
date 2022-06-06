@@ -3,20 +3,20 @@ package blog;
 import java.util.*;
 
 public class Blog {
-    private ArrayList<Post> posts;
+    private List<Post> postagens;
 
     public Blog() {
-        this.posts = new ArrayList<Post>();
+        this.postagens = new ArrayList<Post>();
     }
 
     public void adicionarPostagem(Post postagem) {
-        this.posts.add(postagem);
+        this.postagens.add(postagem);
     }
 
     public Set<String> obterTodosAutores() {
         Set<String> autores = new TreeSet<String>();
 
-        for (Post post : this.posts) {
+        for (Post post : this.postagens) {
             autores.add(post.getAutor());
         }
 
@@ -26,7 +26,7 @@ public class Blog {
     public Map<String, Integer> obterContagemPorCategoria() {
         TreeMap<String, Integer> postsPorCategoria = new TreeMap<String, Integer>();
 
-        for (Post post : this.posts) {
+        for (Post post : this.postagens) {
             String categoria = post.getCategoria();
             Integer numeroDePostsCategoria = postsPorCategoria.get(categoria);
 
