@@ -1,4 +1,4 @@
-package quadrado;
+package quadrado_1;
 
 import java.util.Locale;
 

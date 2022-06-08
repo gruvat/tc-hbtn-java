@@ -1,11 +1,11 @@
-package quadrado;
+package quadrado_1;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 public class Program {
     public static void main(String[] args) {
-        Quadrado quadrado = new Quadrado();
+        quadrado_1.Quadrado quadrado = new quadrado_1.Quadrado();
 
         quadrado.setLado(10);
 

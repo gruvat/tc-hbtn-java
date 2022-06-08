@@ -1,4 +1,4 @@
-package quadrado;
+package quadrado_1;
 
 public class FormaGeometrica {
 
