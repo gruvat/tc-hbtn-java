@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class ConsultaProdutos {
 
-    static List<Produto> filtrar(List<Produto> produtos, Predicate<Produto> filtro) {
+    public static List<Produto> filtrar(List<Produto> produtos, Predicate<Produto> filtro) {
         return produtos.stream()
                 .filter(filtro)
                 .collect(Collectors.toList());
