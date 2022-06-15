@@ -1,4 +1,4 @@
-
+package preco_minimo;
 
 public class Cliente {
 
