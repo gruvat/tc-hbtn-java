@@ -7,7 +7,7 @@ public class ConsultaPessoas {
 
     public static TreeMap<String, TreeSet<Pessoa>> obterPessoasAgrupadasPorCargoEmOrdemReversa(List<Pessoa> pessoas) {
 
-        Comparator<String> c = (Comparator<String>) Comparator.naturalOrder().reversed();
+        Comparator<String> c = (String p1, String p2) -> p1.compareTo(p2) * -1;
         return  pessoas.stream()
                 .collect(
                         Collectors.groupingBy(
