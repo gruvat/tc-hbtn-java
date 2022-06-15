@@ -8,7 +8,7 @@ public class Consulta {
 
     public static List<Produto> obterLivrosDoPedido(Pedido pedido) {
         return pedido.getProdutos().stream()
-                .filter(p -> p.getCategoria().equals(CategoriaProduto.LIVRO))
+                .filter( p -> p.getCategoria().equals(CategoriaProduto.LIVRO))
                 .collect(Collectors.toList());
     }
 
@@ -20,7 +20,7 @@ public class Consulta {
 
     public static List<Produto> obterProdutosPorPrecoMinimo(List<Produto> produtos, double precoMinimo) {
         return produtos.stream()
-                    .filter(p -> p.getPreco() >= precoMinimo)
+                .filter(p -> p.getPreco() >= precoMinimo)
                 .collect(Collectors.toList());
     }
 }
