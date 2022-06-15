@@ -8,8 +8,8 @@ public class ConsultaProdutos {
 
     public static List<Produto> filtrar(List<Produto> produtos, Predicate<Produto> filtro) {
         return produtos.stream()
-                .filter(filtro)
-                .collect(Collectors.toList());
+                    .filter(filtro)
+                    .collect(Collectors.toList());
     }
 
 }
