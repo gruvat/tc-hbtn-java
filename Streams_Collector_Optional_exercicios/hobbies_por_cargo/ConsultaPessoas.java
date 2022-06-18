@@ -1,7 +1,9 @@
 package hobbies_por_cargo;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ConsultaPessoas {
 
@@ -63,6 +65,31 @@ public class ConsultaPessoas {
                                 )
                         )
                 );
+    }
+
+    public static Map<String, Map<Pessoa, List<String>>> obterPessoasPorHobbiesPorCargo(List<Pessoa> pessoas) {
+        // Map< cargo, Map< hobbies, List< pessoas > >>
+        // TO-DO
+
+//        return pessoas.stream()
+//                .collect(
+//                        Collectors.groupingBy(
+//                                Pessoa::getCargo,
+//                                Collectors.groupingBy(
+//                                        Collectors.collectingAndThen(
+//                                                Pessoa::getHobbies,
+//                                                Collectors.flatMapping(
+//                                                        (Pessoa hobbies) -> hobbies.getHobbies().stream(),
+//                                                        Collectors.toList()
+//                                                )
+//                                        ),
+//                                        Function.identity()
+//                                )
+//
+//
+//                        )
+//                );
+        return null;
     }
 
 }
